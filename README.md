@@ -9,7 +9,7 @@ BER-TLV objects. It has no external dependencies or platform-specific code.
 > [!WARNING]
 > This module is under active development. Its public API may change during `v0.x`.
 
-## Support
+## Features
 
 The package supports:
 
@@ -85,14 +85,14 @@ object schemas and traversal of nested objects belong to the caller.
 It does not provide ASN.1 struct marshaling, indefinite-length encoding or
 application-specific data models.
 
-## Testing
+## Development
 
 ```sh
-go test ./...
-go vet ./...
+GOWORK=off go test ./...
+GOWORK=off go vet ./...
 make lint
 ```
 
 ## License
 
-Apache License 2.0. See [`LICENSE`](LICENSE).
+[Apache License 2.0](LICENSE).
